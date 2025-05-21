@@ -6,27 +6,47 @@ import { ArrowRight } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-[#F9FAFB]">
+    <div className="min-h-screen bg-[#FFF5F0]">
       {/* Header */}
-      <header className="bg-[#111827] text-white py-4 px-6 shadow-md">
+      <header className="bg-[#FFF5F0] py-4 px-6 shadow-sm">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">XpressDine</h1>
+          <div className="flex items-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2">
+              <path d="M12 6L7 12H17L12 6Z" fill="#FF5631" />
+              <path d="M17 12L12 18L7 12H17Z" fill="#FF5631" />
+            </svg>
+            <h1 className="text-2xl font-bold text-[#FF5631]">XpressDine</h1>
+          </div>
           <nav className="hidden md:flex gap-6">
-            <a href="#" className="hover:text-[#3B82F6] transition-colors">Dashboard</a>
-            <a href="#" className="hover:text-[#3B82F6] transition-colors">Reservations</a>
-            <a href="#" className="hover:text-[#3B82F6] transition-colors">Tables</a>
-            <a href="#" className="hover:text-[#3B82F6] transition-colors">Settings</a>
+            <a href="#" className="hover:text-[#FF5631] transition-colors">Features</a>
+            <a href="#" className="hover:text-[#FF5631] transition-colors">AI Concierge</a>
+            <a href="#" className="hover:text-[#FF5631] transition-colors">Contact</a>
           </nav>
-          <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-[#111827]">
-            Login
+          <Button className="bg-[#FF5631] hover:bg-[#E64A2A] text-white">
+            Get Started
           </Button>
         </div>
       </header>
 
       {/* Main Content */}
       <main className="container mx-auto py-8 px-4">
+        <section className="mb-12 text-center max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-[#111827] mb-6">AI Concierge for 24/7 Reservations</h2>
+          <p className="text-lg mb-8 text-gray-600">
+            Never miss a booking with XpressDine's multilingual AI Concierge and WhatsApp bot - designed specifically for Southeast Asian restaurants.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center mb-12">
+            <Button className="bg-[#FF5631] hover:bg-[#E64A2A] text-white">
+              Request Demo <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+            <Button variant="outline" className="border-[#FF5631] text-[#FF5631] hover:bg-[#FFF0EB]">
+              Learn More
+            </Button>
+          </div>
+        </section>
+
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-[#111827] mb-6">Restaurant Management System</h2>
+          <h3 className="text-3xl font-bold text-[#111827] mb-6 text-center">XpressDine Reservation System</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Overview Card */}
             <Card>
@@ -51,7 +71,7 @@ const Index = () => {
                 </div>
               </CardContent>
               <CardFooter>
-                <Button className="w-full bg-[#2563EB] hover:bg-[#1D4ED8]">
+                <Button className="w-full bg-[#FF5631] hover:bg-[#E64A2A]">
                   View Details <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </CardFooter>
@@ -82,7 +102,7 @@ const Index = () => {
                 </div>
               </CardContent>
               <CardFooter>
-                <Button variant="outline" className="w-full border-[#2563EB] text-[#2563EB] hover:bg-[#EFF6FF]">
+                <Button variant="outline" className="w-full border-[#FF5631] text-[#FF5631] hover:bg-[#FFF0EB]">
                   Manage Reservations
                 </Button>
               </CardFooter>
@@ -95,7 +115,7 @@ const Index = () => {
                 <CardDescription>Common tasks</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <Button className="w-full bg-[#2563EB] hover:bg-[#1D4ED8]">
+                <Button className="w-full bg-[#FF5631] hover:bg-[#E64A2A]">
                   New Reservation
                 </Button>
                 <Button className="w-full bg-[#10B981] hover:bg-[#059669]">
@@ -111,20 +131,26 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#111827] text-white py-6 px-4">
+      <footer className="bg-[#FFF5F0] text-gray-700 py-6 px-4 border-t border-gray-200">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <h3 className="text-xl font-bold">XpressDine</h3>
-              <p className="text-sm text-gray-400">Restaurant Management System</p>
+              <div className="flex items-center">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2">
+                  <path d="M12 6L7 12H17L12 6Z" fill="#FF5631" />
+                  <path d="M17 12L12 18L7 12H17Z" fill="#FF5631" />
+                </svg>
+                <h3 className="text-xl font-bold text-[#FF5631]">XpressDine</h3>
+              </div>
+              <p className="text-sm text-gray-500">XpressDine Reservation System</p>
             </div>
             <div className="flex gap-6">
-              <a href="#" className="text-sm hover:text-[#3B82F6]">Terms of Service</a>
-              <a href="#" className="text-sm hover:text-[#3B82F6]">Privacy Policy</a>
-              <a href="#" className="text-sm hover:text-[#3B82F6]">Contact Us</a>
+              <a href="#" className="text-sm hover:text-[#FF5631]">Terms of Service</a>
+              <a href="#" className="text-sm hover:text-[#FF5631]">Privacy Policy</a>
+              <a href="#" className="text-sm hover:text-[#FF5631]">Contact Us</a>
             </div>
           </div>
-          <div className="mt-6 text-center text-sm text-gray-400">
+          <div className="mt-6 text-center text-sm text-gray-500">
             &copy; {new Date().getFullYear()} XpressDine. All rights reserved.
           </div>
         </div>
