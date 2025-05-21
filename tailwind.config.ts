@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -27,17 +26,17 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				
 				// XpressDine Color Scheme
-				'xd-blue': {
-					DEFAULT: '#2563EB', // Main Brand Blue
-					dark: '#1D4ED8',   // Dark Blue
-					light: '#3B82F6',  // Light Blue
+				'xd-orange': {
+					DEFAULT: '#FF5631', // Main Brand Orange
+					dark: '#E64A2A',   // Dark Orange
+					light: '#FF7D63',  // Light Orange
 				},
 				'xd-green': '#10B981',  // Success Green
 				'xd-yellow': '#F59E0B', // Warning Yellow
 				'xd-red': '#EF4444',    // Error Red
 				'xd-gray': '#6B7280',   // Neutral Gray
 				'xd-bg': {
-					light: '#F9FAFB',  // Light Background
+					light: '#FFF5F0',  // Light Peach Background
 					white: '#FFFFFF',  // White
 					dark: '#111827',   // Dark Background
 				},
@@ -82,7 +81,9 @@ export default {
 				},
 			},
 			fontFamily: {
-				sans: ['Inter', '-apple-system', 'sans-serif'],
+				sans: ['Poppins', 'Inter', '-apple-system', 'sans-serif'],
+				poppins: ['Poppins', 'sans-serif'],
+				inter: ['Inter', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

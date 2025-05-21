@@ -1,8 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Utensils } from "lucide-react";
 
 const Index = () => {
   return (
@@ -11,11 +10,11 @@ const Index = () => {
       <header className="bg-[#FFF5F0] py-4 px-6 shadow-sm">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2">
-              <path d="M12 6L7 12H17L12 6Z" fill="#FF5631" />
-              <path d="M17 12L12 18L7 12H17Z" fill="#FF5631" />
-            </svg>
-            <h1 className="text-2xl font-bold text-[#FF5631]">XpressDine</h1>
+            {/* XpressDine Logo */}
+            <div className="flex items-center">
+              <img src="/lovable-uploads/8e6f3ae9-16f6-409b-a682-7d8c3c91f52a.png" alt="XpressDine Logo" className="h-8 mr-2" />
+              <h1 className="text-2xl font-bold text-[#FF5631]">pressdine</h1>
+            </div>
           </div>
           <nav className="hidden md:flex gap-6">
             <a href="#" className="hover:text-[#FF5631] transition-colors">Features</a>
@@ -136,11 +135,9 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <div className="flex items-center">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2">
-                  <path d="M12 6L7 12H17L12 6Z" fill="#FF5631" />
-                  <path d="M17 12L12 18L7 12H17Z" fill="#FF5631" />
-                </svg>
-                <h3 className="text-xl font-bold text-[#FF5631]">XpressDine</h3>
+                {/* Updated XpressDine Logo in Footer */}
+                <img src="/lovable-uploads/8e6f3ae9-16f6-409b-a682-7d8c3c91f52a.png" alt="XpressDine Logo" className="h-6 mr-2" />
+                <h3 className="text-xl font-bold text-[#FF5631]">pressdine</h3>
               </div>
               <p className="text-sm text-gray-500">XpressDine Reservation System</p>
             </div>
